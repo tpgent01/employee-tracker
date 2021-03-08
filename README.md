@@ -52,8 +52,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 
 ## 🎨Mock-Up
-![](public/assets/images/mock-up1.png)
-<br>![](public/assets/images/mock-up2.png)</br>
+![](public/assets/mock-up.gif)
 
 
 ## 🔌Installation
