@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "migrate": "sqlite3 db/election.db < db/schema.sql",
-    "seed": "sqlite3 db/election.db < db/seeds.sql",
-    "db": "sqlite3 db/election.db",
+    "migrate": "mysql -u root -p employeeTracker.db < db/schema.sql",
+    "seed": "mysql -u root -p employeeTracker.db < db/seeds.sql",
+    "db": "mysql -u root -p employeeTracker.db",
     "start": "node server.js"
   },
   "repository": {
