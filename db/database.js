@@ -1,35 +1,35 @@
-const mysql = require("mysql2");
+class DB {
 
-// create connection to database
-const connection = mysql.createConnection({
-  host: "localhost",
-  port: 3001,
-  user: "root",
-  password: "Pokemon23?",
-  database: "employees"
-});
-
-// simple query
-connection.query(
-    'SELECT * FROM `table` WHERE `name` = "Page" AND `age` > 45',
-    function(err, results, fields) {
-      console.log(results); // results contains rows returned by server
-      console.log(fields); // fields contains extra meta data about results, if available
+    // Get Departments
+    get showDepartments() {
+        return "SELECT department.id, department.name FROM department"
     }
-);
-   
-// with placeholder
-connection.query(
-    'SELECT * FROM `table` WHERE `name` = ? AND `age` > ?',
-    ['Page', 45],
-    function(err, results) {
-      console.log(results);
+
+    // Add new Role
+    get createRole() {
+        return "INSERT INTO role SET ?"
     }
-);
 
-// error function
-connection.connect(function (err) {
-  if (err) throw err;
-});
+    // Get Roles
+    get showRoles() {
+        return "SELECT role.id, role.title FROM role"
+    }
 
-module.exports = connection;
+    // Get Manager
+    get showManagers() {
+        return "SELECT employee.id, employee.first_name, employee.last_name FROM employee"
+    }
+
+    // Add new Employee
+    get createEmployee() {
+        return "INSERT INTO employee SET ?"
+    }
+
+    // Update Role
+    get updateRole() {
+        // issue with this sql syntax
+        return "UPDATE employee SET role_id = ? WHERE id = ?"
+      }
+}
+
+module.exports = new DB();

@@ -2,12 +2,9 @@
   "name": "challenge-12",
   "version": "1.0.0",
   "description": "![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
-    "migrate": "mysql -u root -p employeeTracker.db < db/schema.sql",
-    "seed": "mysql -u root -p employeeTracker.db < db/seeds.sql",
-    "db": "mysql -u root -p employeeTracker.db",
     "start": "node server.js"
   },
   "repository": {
