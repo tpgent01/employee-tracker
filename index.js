@@ -1,5 +1,4 @@
-const inquirer = require('inquirer')
-const cTable = require('console.table');
-const DB = require('./db/database');
+const EmployeeTracker = require('./lib/EmployeeTracker');
 
-const mysql = require('mysql2');
+// start the application
+new EmployeeTracker().initializeEmployeeTracker();
