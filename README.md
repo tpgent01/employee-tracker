@@ -16,7 +16,6 @@ A command-line application to manage a company's employee database, using Node.j
 * [Built With](#built-with)
 * [License](#license)
 * [Badges](#badges)
-* [Tests](#tests)
 * [Questions](#questions)
 * [Contributing](#contributing)
 
@@ -86,19 +85,11 @@ Licensed under the MIT license.
 ## 🏆Badges
 
 ![GitHub top language](https://img.shields.io/github/languages/top/tpgent01/employee-tracker?style=plastic)
-<br>![GitHub repo size](https://img.shields.io/github/repo-size/tpgent01/employee-tracker?style=plastic)</br>
-<br>![npm bundle size](https://img.shields.io/bundlephobia/minzip/inquirer?style=plastic) - Inquirer</br>
+<br>![GitHub repo size](https://img.shields.io/github/repo-size/tpgent01/employee-tracker?style=plastic)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/inquirer?style=plastic) - Inquirer</br>
 <br>![GitHub closed issues](https://img.shields.io/github/issues-closed/tpgent01/employee-tracker?style=plastic)</br>
 ![GitHub watchers](https://img.shields.io/github/watchers/tpgent01/employee-tracker?style=social)
 <br>![GitHub Repo stars](https://img.shields.io/github/stars/tpgent01/employee-tracker?style=social)</br>
-
-
-
-## 📊Tests
-
-To test this project, please see the [Installation](#installation) section - then run command _npm run test_.
-<br>The functions were tested before building out the remainder of the program.</br> 
-<br>![](public/assets/images/test.gif)</br>
 
 
 ## ❓Questions
