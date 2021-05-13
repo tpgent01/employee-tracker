@@ -3,7 +3,7 @@
 
 
 ## 💬 Description 
-
+A command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
 
 ## 📓 Table of Contents
@@ -48,11 +48,13 @@ WHEN I choose to add an employee
 THEN I am prompted to enter the employee’s first name, last name, role, and manager and that employee is added to the database
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+
 ```
 
 
 ## 🎨Mock-Up
 ![](assets/mock-up.gif)
+<br>![](assets/databse.png)</br>
 
 
 ## 🔌Installation
@@ -63,20 +65,15 @@ The user should clone the repository from GitHub and open up the project in thei
 
 ## 💻Usage 
 To run on localhost:3001, please run command _npm start_ to start the server and _control C_ to stop.
-To run program on Heroku, please [click here](https://gentry-note-taker.herokuapp.com/).
-<br>[Click me for walkthrough❗️](https://drive.google.com/file/d/1w_e_9PtWJ3t6cPhLJF4xTVtjRc396Spz/view)</br>
-<br>![](public/assets/images/example.gif)</br>
+<br>[Click me for walkthrough❗️](https://drive.google.com/file/d/1S0p6LmWYU0owYgD8Jo1iNLrikmha1mwj/view)</br>
+<br>![](assets/example.gif)</br>
 
 
 ## ✏️Built With
 <p><a href="https://nodejs.org/">Node.js</a></p>
 <p><a href="https://www.npmjs.com/">NPM</a></p>
-<p><a href="https://www.npmjs.com/package/express">Express.js</a></p>
 <p><a href="https://www.npmjs.com/package/inquirer">Inquirer.js</a></p>
-<p><a href="https://jestjs.io/">Jest</a></p>
-<p><a href="https://heroku.com/">Heroku</a></p>
-<p><a href="https://getbootstrap.com/">Bootstrap</a></p>
-<p><a href="https://fonts.google.com/">Google Fonts</a></p>
+<p><a href="https://www.mysql.com/">MySQL</a></p>
 
 
 ## 🔐License
@@ -88,14 +85,12 @@ Licensed under the MIT license.
 
 ## 🏆Badges
 
-![GitHub top language](https://img.shields.io/github/languages/top/tpgent01/note-taker?style=plastic)
-<br>![GitHub repo size](https://img.shields.io/github/repo-size/tpgent01/note-taker?style=plastic)</br>
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/jest?style=plastic) - Jest
+![GitHub top language](https://img.shields.io/github/languages/top/tpgent01/employee-tracker?style=plastic)
+<br>![GitHub repo size](https://img.shields.io/github/repo-size/tpgent01/employee-tracker?style=plastic)</br>
 <br>![npm bundle size](https://img.shields.io/bundlephobia/minzip/inquirer?style=plastic) - Inquirer</br>
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/express?style=plastic) - Express
-<br>![GitHub closed issues](https://img.shields.io/github/issues-closed/tpgent01/note-taker?style=plastic)</br>
-![GitHub watchers](https://img.shields.io/github/watchers/tpgent01/note-taker?style=social)
-<br>![GitHub Repo stars](https://img.shields.io/github/stars/tpgent01/note-taker?style=social)</br>
+<br>![GitHub closed issues](https://img.shields.io/github/issues-closed/tpgent01/employee-tracker?style=plastic)</br>
+![GitHub watchers](https://img.shields.io/github/watchers/tpgent01/employee-tracker?style=social)
+<br>![GitHub Repo stars](https://img.shields.io/github/stars/tpgent01/employee-tracker?style=social)</br>
 
 
 
