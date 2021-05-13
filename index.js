@@ -1,4 +1,4 @@
-const employeeTracker = require('./lib/employeeTracker');
+const EmployeeTracker = require('./lib/EmployeeTracker');
 
 // start the application
-new employeeTracker().initializeEmployeeTracker();
+new EmployeeTracker().initializeEmployeeTracker();

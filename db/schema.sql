@@ -1,19 +1,24 @@
-DROP DATABASE IF EXISTS employees;
-CREATE DATABASE employees;
+-- delete the DB if it exists
+DROP DATABASE IF EXISTS company_db;
+-- DROP TABLE IF EXISTS is also an option
+    -- create the company db
+    CREATE DATABASE company_db;
+    -- tell MySQL to use the database you just made 
+    USE company_db;
 
-USE employees;
+-- need to make the department table first / then > role table / then > employee table  due to constraints
 
-DROP TABLE IF EXISTS department;
-DROP TABLE IF EXISTS role;
-DROP TABLE IF EXISTS employee;
-
-CREATE TABLE department (
+-- create department table
+CREATE TABLE department(
+    -- make data fields
     id INTEGER(11) AUTO_INCREMENT NOT NULL, 
     name VARCHAR(30) NOT NULL,
     PRIMARY KEY (id)
 );
 
-CREATE TABLE role (
+-- create role table
+CREATE TABLE role(
+    -- make data fields
     id INTEGER(11) AUTO_INCREMENT NOT NULL, 
     title VARCHAR(30) NOT NULL,
     salary DECIMAL NOT NULL,
@@ -22,8 +27,10 @@ CREATE TABLE role (
     CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE CASCADE
 );
 
-CREATE TABLE employee (
-   id INTEGER(11) AUTO_INCREMENT NOT NULL, 
+-- create employee table
+CREATE TABLE employee(
+    -- make data fields
+    id INTEGER(11) AUTO_INCREMENT NOT NULL, 
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     role_id INTEGER(11) NOT NULL,
